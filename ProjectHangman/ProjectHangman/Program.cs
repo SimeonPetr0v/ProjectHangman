@@ -390,9 +390,7 @@ namespace ProjectHangman
                 List<char> usedLetters = new List<char>();
                 int incAnswer = 0;
                 DrawCurrentGameState(false, incAnswer, wordToGuess, usedLetters);
-                Console.ReadLine();
                 PlayGame(word, wordToGuess, incAnswer, usedLetters);
-
                 Console.Write("If you want to play again, press [Enter]. Else, type 'quit':");
                 string playerInput = Console.ReadLine();
 
